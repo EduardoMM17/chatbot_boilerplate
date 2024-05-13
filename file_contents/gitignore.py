@@ -1,0 +1,6 @@
+content = """
+.env
+venv/
+__init__.py
+__pycache__
+"""
