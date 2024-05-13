@@ -77,5 +77,4 @@ async def ask_assistant(input: str) -> str | tuple:
             error_traceback = traceback.format_exc()
             print(error_traceback)
     return "Estamos experimentando una alta demanda en nuestro servicio, por favor contáctanos en 2 minutos"
-
 """

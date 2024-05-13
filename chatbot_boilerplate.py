@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 import subprocess
 
@@ -11,6 +12,7 @@ from file_contents.prompt import content as prompt_content
 from file_contents.twilio.client import content as twilio_client_content
 from file_contents.twilio.twilio import content as twilio_methods_content
 from file_contents.twilio.utils import content as twilio_utils_content
+from file_contents.catalog import content as catalog_content
 
 def create_project_structure(base_path):
     directories = [
@@ -32,6 +34,7 @@ def create_project_structure(base_path):
         f"{base_path}/src/api/assistant.py": assistant_content,
         f"{base_path}/main.py": main_content,
         f"{base_path}/src/services/llm/agent.py": agent_content,
+        f"{base_path}/src/knowledge_db/catalog.py": catalog_content,
         f"{base_path}/src/services/llm/prompt.py": prompt_content,
         f"{base_path}/.gitignore": gitignore_content,
         f"{base_path}/src/services/llm/tools/build_tools.py": build_tool_content,
